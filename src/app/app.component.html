@@ -1,7 +1,9 @@
 <h1>{{title}}</h1>
 
-<app-contact> </app-contact>
+<input type="text" id="txt"  (change)="bye()"/>
+<button id="btn" class="btn btn-success" (click)="hello()" >Okay </button>
+<br>
+<p *ngIf="loginFlag; else demo1">Successfully logged in</p>
+<ng-template #demo1> Please login again to continue </ng-template>
 
-<h2>REGISTER</h2>
-
-<app-about></app-about>
+<p>{{name}}</p>
